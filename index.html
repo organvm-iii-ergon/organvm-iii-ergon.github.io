@@ -8,7 +8,6 @@
         :root { --primary: #0366d6; --bg: #f6f8fa; --text: #24292e; --border: #e1e4e8; --sidebar-bg: #ffffff; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); margin: 0; display: flex; min-height: 100vh; background: var(--bg); }
         
-        /* Sidebar Styles */
         nav { width: 280px; background: var(--sidebar-bg); border-right: 1px solid var(--border); padding: 2rem 1.5rem; flex-shrink: 0; position: sticky; top: 0; height: 100vh; box-sizing: border-box; overflow-y: auto; }
         nav h2 { font-size: 0.75rem; color: #6a737d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; padding-left: 0.75rem; }
         nav ul { list-style: none; padding: 0; margin: 0; }
@@ -17,19 +16,17 @@
         nav a:hover { background: #f1f8ff; color: var(--primary); }
         nav a.active { background: #f1f8ff; color: var(--primary); font-weight: 600; border-left: 3px solid var(--primary); border-radius: 0 6px 6px 0; }
 
-        /* Main Content Styles */
         main { flex-grow: 1; padding: 3rem 4rem; max-width: 1200px; }
         header { margin-bottom: 3rem; }
         header h1 { font-size: 2.2rem; font-weight: 800; margin: 0; color: #000; letter-spacing: -0.5px; }
         header p { color: #6a737d; font-size: 1.1rem; margin-top: 0.5rem; }
 
         .repo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
-        .repo-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); display: flex; flex-direction: column; text-decoration: none; color: inherit; position: relative; }
+        .repo-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); display: flex; flex-direction: column; text-decoration: none; color: inherit; }
         .repo-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
         .repo-name { color: var(--primary); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; word-break: break-all; }
         .repo-desc { font-size: 0.95rem; color: #586069; line-height: 1.5; margin-bottom: 1.5rem; flex-grow: 1; }
-        .repo-footer { display: flex; align-items: center; justify-content: space-between; }
-        .tag { font-size: 0.65rem; background: #f1f8ff; color: var(--primary); padding: 3px 10px; border-radius: 20px; font-weight: 700; text-transform: uppercase; border: 1px solid #c8e1ff; }
+        .tag { font-size: 0.65rem; background: #f1f8ff; color: var(--primary); padding: 3px 10px; border-radius: 20px; font-weight: 700; text-transform: uppercase; border: 1px solid #c8e1ff; align-self: flex-start; }
 
         @media (max-width: 1000px) { main { padding: 2rem; } }
         @media (max-width: 800px) { body { flex-direction: column; } nav { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border); padding: 1.5rem; } nav ul { display: flex; flex-wrap: wrap; gap: 0.5rem; } nav li { margin: 0; } }
@@ -53,158 +50,158 @@
     <main>
         <header>
             <h1>ORGAN-III (Ergon)</h1>
-            <p>Integrated repository directory for the <strong>organvm-iii-ergon</strong> collective.</p>
+            <p>Comprehensive repository directory for the <strong>organvm-iii-ergon</strong> collective.</p>
         </header>
         <div class="repo-grid">
-            <a href="/.github/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/.github" class="repo-card">
                 <span class="repo-name">.github</span>
                 <p class="repo-desc">Organization profile and community health files.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/a-i-chat--exporter/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/a-i-chat--exporter" class="repo-card">
                 <span class="repo-name">a-i-chat--exporter</span>
                 <p class="repo-desc">Export and share AI chat conversation history (fork of chatgpt-exporter).</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/anon-hookup-now/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/anon-hookup-now" class="repo-card">
                 <span class="repo-name">anon-hookup-now</span>
                 <p class="repo-desc">open-source grid+map rendezvous.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/card-trade-social/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/card-trade-social" class="repo-card">
                 <span class="repo-name">card-trade-social</span>
                 <p class="repo-desc">Hydra Trading Card Ecosystem — financial-grade portfolio tracking, social commerce, gamification, and AI-powered generative content for the TCG asset class.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/classroom-rpg-aetheria/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/classroom-rpg-aetheria" class="repo-card">
                 <span class="repo-name">classroom-rpg-aetheria</span>
                 <p class="repo-desc">Educational RPG system for classroom engagement.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/commerce--meta/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/commerce--meta" class="repo-card">
                 <span class="repo-name">commerce--meta</span>
                 <p class="repo-desc">Private governance repo for ORGAN-III commerce operations: contracts, IP agreements, customer terms, financial governance.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/enterprise-plugin/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/enterprise-plugin" class="repo-card">
                 <span class="repo-name">enterprise-plugin</span>
                 <p class="repo-desc">[ARCHIVED] Enterprise integration layer — concept absorbable into existing products.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/fetch-familiar-friends/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/fetch-familiar-friends" class="repo-card">
                 <span class="repo-name">fetch-familiar-friends</span>
                 <p class="repo-desc">Social matching and community platform.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/gamified-coach-interface/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/gamified-coach-interface" class="repo-card">
                 <span class="repo-name">gamified-coach-interface</span>
                 <p class="repo-desc">Gamified coaching system with progress tracking.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/hokage-chess/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/hokage-chess" class="repo-card">
                 <span class="repo-name">hokage-chess</span>
                 <p class="repo-desc">Chess content creation engine — strategic growth blueprint, narrative-driven YouTube channel, and audience development system for competitive chess content.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/life-my--midst--in/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/life-my--midst--in" class="repo-card">
                 <span class="repo-name">life-my--midst--in</span>
                 <p class="repo-desc">Inverted Interview CV platform — employer-as-interviewee identity operating system with 16 masks and W3C Verifiable Credentials.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/mirror-mirror/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/mirror-mirror" class="repo-card">
                 <span class="repo-name">mirror-mirror</span>
                 <p class="repo-desc">Private analytics and customer insights platform.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/multi-camera--livestream--framework/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/multi-camera--livestream--framework" class="repo-card">
                 <span class="repo-name">multi-camera--livestream--framework</span>
                 <p class="repo-desc">Multi-camera livestream production platform.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/my--father-mother/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/my--father-mother" class="repo-card">
                 <span class="repo-name">my--father-mother</span>
                 <p class="repo-desc">Local-only clipboard long-term memory for macOS with FTS5 search, semantic embeddings, federation, and browser integration.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/my-block-warfare/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/my-block-warfare" class="repo-card">
                 <span class="repo-name">my-block-warfare</span>
                 <p class="repo-desc">TurfSynth AR — location-based game with environmental synthesis and procedural creature generation.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/organvm-iii-ergon--superproject/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/organvm-iii-ergon--superproject" class="repo-card">
                 <span class="repo-name">organvm-iii-ergon--superproject</span>
                 <p class="repo-desc">Superproject tracking submodules for organvm-iii-ergon.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/parlor-games--ephemera-engine/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/parlor-games--ephemera-engine" class="repo-card">
                 <span class="repo-name">parlor-games--ephemera-engine</span>
                 <p class="repo-desc">System for unrepeatable parlor/party games across three phases.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/peer-audited--behavioral-blockchain/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/peer-audited--behavioral-blockchain" class="repo-card">
                 <span class="repo-name">peer-audited--behavioral-blockchain</span>
                 <p class="repo-desc">Styx: peer-audited behavioral market using loss aversion and financial stakes.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/public-record-data-scrapper/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/public-record-data-scrapper" class="repo-card">
                 <span class="repo-name">public-record-data-scrapper</span>
                 <p class="repo-desc">50-state UCC public records aggregation platform.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/render-second-amendment/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/render-second-amendment" class="repo-card">
                 <span class="repo-name">render-second-amendment</span>
                 <p class="repo-desc">3d printed guns repository from sources across the internet.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/search-local--happy-hour/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/search-local--happy-hour" class="repo-card">
                 <span class="repo-name">search-local--happy-hour</span>
                 <p class="repo-desc">Location-based social discovery for local events.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/select-or-left-or-right-or/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/select-or-left-or-right-or" class="repo-card">
                 <span class="repo-name">select-or-left-or-right-or</span>
-                <p class="repo-desc">Systems and specifications for the organvm-iii-ergon ecosystem.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <p class="repo-desc">Systems and core specifications for the organvm-iii-ergon ecosystem.</p>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/sovereign-ecosystem--real-estate-luxury/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/sovereign-ecosystem--real-estate-luxury" class="repo-card">
                 <span class="repo-name">sovereign-ecosystem--real-estate-luxury</span>
                 <p class="repo-desc">Luxury real estate marketplace with blockchain verification.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/tab-bookmark-manager/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/tab-bookmark-manager" class="repo-card">
                 <span class="repo-name">tab-bookmark-manager</span>
                 <p class="repo-desc">AI-powered tab and bookmark management SaaS with ML services and browser extension.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/the-actual-news/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/the-actual-news" class="repo-card">
                 <span class="repo-name">the-actual-news</span>
                 <p class="repo-desc">Verifiable news ledger platform — news as a public service.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/the-invisible-ledger/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/the-invisible-ledger" class="repo-card">
                 <span class="repo-name">the-invisible-ledger</span>
                 <p class="repo-desc">Private financial tracking and accounting system.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/trade-perpetual-future/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/trade-perpetual-future" class="repo-card">
                 <span class="repo-name">trade-perpetual-future</span>
                 <p class="repo-desc">Perpetual futures trading system.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/universal-mail--automation/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/universal-mail--automation" class="repo-card">
                 <span class="repo-name">universal-mail--automation</span>
                 <p class="repo-desc">Email workflow automation and scheduling.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/virgil-training-overlay/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/virgil-training-overlay" class="repo-card">
                 <span class="repo-name">virgil-training-overlay</span>
                 <p class="repo-desc">[ARCHIVED] macOS Swift CLI utility for application focus monitoring — low relevance utility.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/your-fit-tailored/" class="repo-card">
+            <a href="https://github.com/organvm-iii-ergon/your-fit-tailored" class="repo-card">
                 <span class="repo-name">your-fit-tailored</span>
                 <p class="repo-desc">Specification-driven seed for circular weekly apparel subscription platform.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
         </div>
         <footer style="margin-top: 6rem; padding-top: 2rem; border-top: 1px solid var(--border); color: #999; font-size: 0.8rem; text-align: center;">
