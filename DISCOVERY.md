@@ -1,0 +1,7 @@
+# Discovery: organvm/organvm-iii-ergon.github.io
+
+**Verdict: value-tier — promote**
+
+`organvm-iii-ergon.github.io` is the live GitHub Pages storefront for the ORGANVM Commerce & Products pillar, publicly reachable at `https://organvm-iii-ergon.github.io/`. It renders a styled directory of 17 product-concept repositories under the `organvm-iii-ergon` org and sits at the center of the eight-organ ecosystem navigation — every other organ page links back through it. Three of its 17 listed repos (`a-i-chat--exporter`, `universal-mail--automation`, `peer-audited--behavioral-blockchain`) are already in the value tier, meaning this page is the inbound face of real revenue-path work. Its critical gap is activation: every card currently shows "No description" and no demo or CTA link, so the storefront is discoverable but unconverting. The highest-leverage first task is **enriching all 17 repo cards with real descriptions and live demo/CTA links**, turning a dark GitHub org directory into a functioning commerce showcase that warms leads and creates first-dollar paths to the products already in the fleet — no new infrastructure required, just copy and links.
+
+**Single best first task:** Open a PR that adds descriptions and demo links to each of the 17 repo cards in `index.html` (and synchronizes the test fixtures in `test/index.test.mjs`), making `https://organvm-iii-ergon.github.io/` a working inbound funnel for the Ergon product portfolio.
